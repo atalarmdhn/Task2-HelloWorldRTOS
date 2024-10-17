@@ -1,5 +1,3 @@
-# UART, ADC, and LED Task Example
-
 This project demonstrates the use of UART communication, ADC (Analog-to-Digital Conversion), and LED control using FreeRTOS tasks on an STM32 microcontroller. The project involves the following features:
 - UART communication for displaying ADC values and button status.
 - ADC reading to obtain analog voltage values.
@@ -12,8 +10,7 @@ This project demonstrates the use of UART communication, ADC (Analog-to-Digital 
 - [Features](#features)
 - [Tasks](#tasks)
 - [How to Use](#how-to-use)
-- [License](#license)
-
+- 
 ## Project Overview
 
 This project is designed for an STM32 microcontroller using FreeRTOS for task management. It consists of multiple tasks that handle:
@@ -23,7 +20,7 @@ This project is designed for an STM32 microcontroller using FreeRTOS for task ma
 - Monitoring a button press to trigger events.
 
 ## Hardware Setup
-![Gambar WhatsApp 2024-09-09 pukul 01 39 52_79be8b36](https://github.com/user-attachments/assets/23e77065-bf54-4fc0-a719-bfae5627d2b4)
+![WhatsApp Image 2024-10-06 at 20 12 40_8e243d42](https://github.com/user-attachments/assets/fb6c5030-276f-4254-b38b-f576bceef62a)
 
 - **Microcontroller**: STM32 (with STM32CubeIDE and HAL)
 - **Peripherals**:
@@ -79,6 +76,3 @@ Default task for handling background operations.
    - The terminal will display a menu.
    - Press the button to read the ADC value and observe the LEDs turning on based on the potentiometer position.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
