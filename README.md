@@ -4,20 +4,14 @@ This project demonstrates the use of UART communication, ADC (Analog-to-Digital 
 - LED control based on the ADC input value.
 - Button detection for triggering actions.
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Tasks](#tasks)
-- [Hardware Setup](#hardware-setup)
-- [Features](#features)
-- [How to Use](#how-to-use)
 
 ## Project Overview
-
 This project is designed for an STM32 microcontroller using FreeRTOS for task management. It consists of multiple tasks that handle:
 - Reading an ADC value (e.g., from a potentiometer).
 - Displaying the ADC value over UART.
 - Controlling LEDs based on the ADC value.
 - Monitoring a button press to trigger events.
+
 
 ## Tasks
 ### 1. `pickButtonTask`
@@ -31,14 +25,19 @@ Displays messages over UART, including ADC values and button press information. 
 ### 5. `StartDefaultTask`
 Default task for handling background operations.
 
+
 ## Hardware Setup
 ![WhatsApp Image 2024-10-06 at 20 12 40_8e243d42](https://github.com/user-attachments/assets/fb6c5030-276f-4254-b38b-f576bceef62a)
+
+https://github.com/user-attachments/assets/da5f57c4-133c-4f08-896f-a8acaccbcdcb
+
 - **Microcontroller**: STM32 (with STM32CubeIDE and HAL)
 - **Peripherals**:
   - 1 Button
   - 5 LEDs
   - UART communication (e.g., USB-to-serial for PC communication)
   - Potentiometer for ADC input
+
 
 ## Features
 1. **ADC Reading**: Reads analog input from a potentiometer and converts it to a digital value (0–4095).
@@ -49,11 +48,13 @@ Default task for handling background operations.
    - User can press a button to display the ADC value on the serial monitor.
 4. **Button Press Detection**: A button press triggers the ADC reading and LED control.
 
+
 ### Pin Configuration
 - **Button**: Connected to a GPIO pin, used to trigger LED display based on ADC value.
 - **LEDs**: 5 LEDs connected to GPIO pins, their state is controlled by the ADC value.
 - **UART**: USART2 used for UART communication (115200 baud rate).
 - **ADC**: Channel 0 used for reading analog input from a potentiometer.
+
 
 ## How to Use
 1. **Connect the hardware**: 
